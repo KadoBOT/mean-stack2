@@ -3,5 +3,11 @@ html
 	head
 		title= title
 	body
+		if userFullName
+			h2 Hello #{userFullName}
+			a(href="/signout") Sign Out
+		else
+			a(href="/signup") Signup
+			a(href="/signin") Signin
+		br
 		img(src="img/logo.png" alt="Logo")
-		h1= title
