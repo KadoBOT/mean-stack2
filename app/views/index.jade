@@ -1,13 +1,23 @@
-doctype
-html
+doctype html
+html(xmlns:ng="angularjs.org")
 	head
 		title= title
 	body
-		if userFullName
-			h2 Hello #{userFullName}
+		if user
 			a(href="/signout") Sign Out
 		else
 			a(href="/signup") Signup
 			a(href="/signin") Signin
-		br
-		img(src="img/logo.png" alt="Logo")
+		
+		section(ng-view)
+
+		script window.user = !{ user|| "null" }
+
+		script(src="/lib/angular/angular.js")
+		script(src="/lib/angular-route/angular-route.js")
+		script(src="/example/example.client.module.js")
+		script(src="/example/controllers/example.client.controller.js")
+		script(src="/example/config/example.client.routes.js")
+		script(src="/user/user.client.module.js")
+		script(src="/user/services/authentication.client.services.js")
+		script(src="/application.js")

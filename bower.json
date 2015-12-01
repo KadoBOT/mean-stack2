@@ -1,0 +1,32 @@
+{
+  "name": "crud",
+  "description": "MEAN Stack Web Development",
+  "main": "server.js",
+  "authors": [
+    "Kado Ambrogi"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "MEAN",
+    "MongoDB",
+    "AngularJS",
+    "Node.JS",
+    "Express"
+  ],
+  "homepage": "https://github.com/iamkado/mean-stack2",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8"
+  }
+}
